@@ -7,7 +7,7 @@ export default function page({params}) {
     <div className=''> 
         {params.slug == 'shop-3' ?
         
-         <AllShoeMain/> : <AllShoeMains/> 
+         <AllShoeMain/> : <AllShoeMains /> 
          }
     </div>
   )

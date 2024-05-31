@@ -14,29 +14,29 @@ export default function Contact1() {
             </div>
           </div>
           <div className='bg-[whitesmoke]'>
-            <p className='text-3xl md:text-5xl font-bold py-10 mx-4 md:mx-7'>Let's Connect</p>
-            <div className='grid grid-cols-1 md:grid-cols-2'>
-              <div className='my-5 mx-0 md:mx-7'>
+            <p className='text-3xl md:text-5xl font-bold pt-10 pb-5 mx-4 md:mx-7'>Let's Connect</p>
+            <div className='grid grid-cols-1 md:grid-cols-2 pl-5 md:px-7 '>
+              <div className='my-5 md:my-5'>
                 <p className='text-sm'>SUPPORT</p>
                 <p className='text-lg font-extrabold text-black'>help@pulse.com</p>
               </div>
-              <div className='my-5'>
+              <div className='my-5 md:my-5'>
                 <p className='text-sm'>WHOLESALE</p>
                 <p className='text-lg font-extrabold text-black'>sales@pulse.com</p>
               </div>
-              <div className='my-5 mx-0 md:mx-7'>
+              <div className='my-5 md:my-5'>
                 <p className='text-sm'>PHONE</p>
                 <p className='text-lg font-extrabold text-black'>+234(810)-317-2537</p>
               </div>
-              <div className='my-5'>
+              <div className='my-5 md:my-5'>
                 <p className='text-sm'>FAX</p>
                 <p className='text-lg font-extrabold text-black'>+234(810)-317-2537</p>
               </div>
-              <div className='my-5 mx-0 md:mx-7'>
+              <div className='my-5 md:my-5'>
                 <p className='text-sm'>LAGOS, NG</p>
                 <p className='text-lg font-extrabold text-black'>41 Montgomery road.</p>
               </div>
-              <div className='my-5'>
+              <div className='my-5 md:my-5'>
                 <p className='text-sm'>ABUJA, NG</p>
                 <p className='text-lg font-extrabold text-black'>12 Wuse Ave.</p>
               </div>

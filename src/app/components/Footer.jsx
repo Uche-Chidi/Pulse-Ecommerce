@@ -17,7 +17,7 @@ export const Footer = () => {
           />
           <button
             type='button'
-            className='w-full sm:w-auto sm:pl-5 text-xs bg-white text-black p-2 sm:p-0'
+            className='w-full sm:w-auto sm:p-3 text-xs bg-white text-black p-2'
           >
             SUBMIT
           </button>
@@ -38,7 +38,9 @@ export const Footer = () => {
             </li>
           </ul>
           <ul className='flex flex-col mb-5 sm:mb-0'>
-            <li className='pb-5'>TERMS</li>
+            <Link href="/dropdown">
+              <li className='pb-5'>TERMS</li>
+            </Link>
             <li className='pb-5'>SHIPPING POLICY</li>
             <li className='pb-5'>REFUND POLICY</li>
           </ul>

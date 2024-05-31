@@ -12,6 +12,7 @@ export const AllShoeMain = () => {
       <section key={all.id} className=''>
         <div className="bg-[#D9D9D9] overflow-hidden">
           <div>
+            <Link href={`/products/${all.name.split(" ").join("-")}`}>
             <Image 
               src={`/shoes/${all.image}`}
               alt={all.name} 
@@ -19,6 +20,7 @@ export const AllShoeMain = () => {
               height={700}
               className="hover:scale-105 transition-transform cursor-pointer duration-300"
             />
+            </Link>
           </div>
         </div>
         <div className="font-semibold text-center">

@@ -16,12 +16,16 @@ export default function Banner() {
             <h2>Sneak in Style</h2>
           </div>
           <div className='flex cursor-pointer mx-3 pt-8'>
-            <button className='bg-white p-2 md:p-3 mr-3'>SHOP NOW</button>
-            <button className='text-white border-2 p-2 md:p-3'>ABOUT PULSE</button>
+            <Link href="/shop">
+              <button className='bg-white border-2 p-2 md:p-3 mr-3 hover:bg-gray-300'>SHOP NOW</button>
+            </Link>
+            <Link href="/about">
+              <button className='text-white border-2 p-2 md:p-3 hover:bg-white hover:text-black'>ABOUT PULSE</button>
+            </Link>
           </div>
         </div>
   
-        <div className='flex flex-col md:flex-row pt-5 w-full h-full gap-5 px-3 md:px-6'>
+        <div className='flex flex-col md:flex-row pt-5 w-full h-full gap-5 px-7 md:px-7'>
           <div className='bg-black h-[50vh] md:h-[95vh] w-full md:w-[48vw] overflow-hidden'>
             <Link href="">
               <div className="bg-cover h-full w-full flex items-center justify-center hover:scale-105 transition-transform cursor-pointer duration-300" style={{backgroundImage: "url('/menshoes.jpg')"}}>

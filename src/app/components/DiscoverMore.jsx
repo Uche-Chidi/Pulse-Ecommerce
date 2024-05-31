@@ -10,8 +10,8 @@ export default function DiscoverMore() {
         >
           <div className="flex flex-col items-center justify-center pt-96">
             <h2 className="text-white text-2xl md:text-4xl">Discover More</h2>
-            <Link href="/shop">
-              <button className="bg-white text-black p-3 mt-5">SHOP ALL</button>
+            <Link href="/shop-3">
+              <button className="bg-white text-black p-3 mt-5 hover:bg-gray-100">SHOP ALL</button>
             </Link>
           </div>
         </div>

@@ -3,7 +3,7 @@ import React from 'react'
 export default function Contact() {
   return (
     <section>
-      <div className='px-4 md:px-7 pt-16 md:pt-32'>
+      <div className='px-7 pt-16 md:pt-32'>
         <div>
           <h1 className='font-extrabold text-4xl md:text-7xl'>Contact Us</h1>
           <div className='flex flex-col w-full md:w-[50%] text-sm md:text-md pt-5 md:pt-10'>

@@ -14,7 +14,7 @@ export default function Shop2() {
         </div>
         <div className="bg-cover h-[50vh] lg:h-[100vh] w-full lg:w-[50vw] flex items-center justify-center" style={{ backgroundImage: "url('/shop2.jpg')" }}>
           <div className='flex flex-col justify-center items-center'>
-            <h2 className='text-white text-2xl mb-4'>Fashion Forward Conversations</h2>
+            <h2 className='text-white text-center text-2xl mb-4'>Fashion Forward Conversations</h2>
             <Link href="/contact">
               <button className='text-black bg-white border p-5 text-sm backdrop-brightness-50'>CONTACT US</button>
             </Link>

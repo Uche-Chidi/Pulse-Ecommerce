@@ -6,7 +6,7 @@ export default function layout({ children }) {
   return (
     <div>
         {children}
-        <AllShoeMains />
+        
     <Shop2 />
     </div>
   )

@@ -3,17 +3,17 @@ import Image from "next/image"
 import Link from "next/link";
 
 export const ShoeMain = () => {
-    const shoeData = data.filter(datum => datum.type === 'men').slice(0, 3);
+    const shoeData = data.filter(datum => datum.type === 'men').slice(4, 7);
   
     const arrivalsLog = shoeData.map(men => (
       <section key={men.id} className='flex flex-col items-center pt-6 pb-16 md:pb-32'>
-        <div className="bg-[#D9D9D9]">
+        <div className="bg-[#D9D9D9] w-full">
           <div>
             <Link href={`/products/${men.name.split(" ").join("-")}`}>
               <Image 
                 src={`/shoes/${men.image}`} 
                 alt={men.name} 
-                width={600} 
+                width={800} 
                 height={800} 
                 className="h-[40vh] md:h-[60vh] w-full hover:scale-105 transition-transform cursor-pointer duration-300"
               />
@@ -31,7 +31,7 @@ export const ShoeMain = () => {
   
     return (
       <section className=''>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mx-5 md:mx-7">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-1 mx-7 md:mx-7">
           {arrivalsLog}
         </div>
       </section>

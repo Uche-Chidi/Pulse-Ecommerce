@@ -8,7 +8,8 @@ export const data = [
       "image": "nike-air-max-270.jpg",
       "color": "White/Black",
       "type": "women",
-      "all": "all"
+      "all": "all",
+      "category": "bestsellers"
     },
     {
       "id": 17,
@@ -19,7 +20,8 @@ export const data = [
       "image": "new-balance-480.jpg",
       "color": "Gray/White",
       "type": "men",
-      "all": "all"
+      "all": "all",
+      "category": "bestsellers"
     },
     {
       "id": 2,
@@ -30,7 +32,8 @@ export const data = [
       "image": "adidas-nmd-r1.jpg",
       "color": "Pink/White",
       "type": "women",
-      "all": "all"
+      "all": "all",
+      "category": "bestsellers"
     },
     {
       "id": 3,
@@ -41,7 +44,8 @@ export const data = [
       "image": "puma-cali.jpg",
       "color": "White/Black",
       "type": "women",
-      "all": "all"
+      "all": "all",
+      "category": "exclusive"
     },
     {
       "id": 24,
@@ -52,7 +56,8 @@ export const data = [
       "image": "reebok-club-c-85.jpg",
       "color": "White/Green",
       "type": "women",
-      "all": "all"
+      "all": "all",
+      "category": "exclusive"
     },
     {
       "id": 4,
@@ -63,7 +68,8 @@ export const data = [
       "image": "reebok-classic-nylon.jpg",
       "color": "Blue/White",
       "type": "women",
-      "all": "all"
+      "all": "all",
+      "category": "exclusive"
     },
     {
       "id": 5,
@@ -74,7 +80,8 @@ export const data = [
       "image": "new-balance-574.jpg",
       "color": "Gray/Pink",
       "type": "women",
-      "all": "all"
+      "all": "all",
+      "category": "exclusive"
     },
     {
       "id": 14,
@@ -85,7 +92,8 @@ export const data = [
       "image": "nike-kd-16.jpg",
       "color": "Purple",
       "type": "men",
-      "all": "all"
+      "all": "all",
+      "category": "exclusive"
     },
     {
       "id": 6,
@@ -96,7 +104,8 @@ export const data = [
       "image": "converse-chuck-taylor.jpg",
       "color": "White/Black",
       "type": "women",
-      "all": "all"
+      "all": "all",
+      "category": "exclusive"
     },
     {
       "id": 7,
@@ -107,7 +116,8 @@ export const data = [
       "image": "vans-slip-on.jpg",
       "color": "Black/White",
       "type": "women",
-      "all": "all"
+      "all": "all",
+      "category": "bestsellers"
     },
     {
       "id": 23,
@@ -118,7 +128,9 @@ export const data = [
       "image": "adidas-harden-8.jpg",
       "color": "Black/White",
       "type": "men",
-      "all": "all"
+      "all": "all",
+      "category": "bestsellers"
+
     },
     {
       "id": 8,
@@ -129,7 +141,8 @@ export const data = [
       "image": "saucony-jazz-original.jpg",
       "color": "Purple/White",
       "type": "women",
-      "all": "all"
+      "all": "all",
+      "category": "bestsellers"
     },
     {
       "id": 9,
@@ -140,7 +153,8 @@ export const data = [
       "image": "asics-gel-lyte-iii.jpg",
       "color": "Black/Teal",
       "type": "women",
-      "all": "all"
+      "all": "all",
+      "category": "exclusive"
     },
     {
       "id": 21,
@@ -151,7 +165,8 @@ export const data = [
       "image": "adidas-ultraboost.jpg",
       "color": "Black/White",
       "type": "men",
-      "all": "all"
+      "all": "all",
+      "category": "exclusive"
     },
     {
       "id": 10,
@@ -162,7 +177,8 @@ export const data = [
       "image": "nike-blazer-low-le.jpg",
       "color": "White/Black",
       "type": "women",
-      "all": "all"
+      "all": "all",
+      "category": "exclusive"
     },
     {
       "id": 11,
@@ -206,7 +222,8 @@ export const data = [
       "image": "nike-jordan-1-low.jpg",
       "color": "Black/Red",
       "type": "men",
-      "all": "all"
+      "all": "all",
+      "category": "sale"
     },
     {
       "id": 16,
@@ -217,7 +234,8 @@ export const data = [
       "image": "reebok-classic-leather.jpg",
       "color": "Black/Gum",
       "type": "men",
-      "all": "all"
+      "all": "all",
+      "category": "sale"
     },
     
     {
@@ -229,7 +247,8 @@ export const data = [
       "image": "converse-chuck-70.jpg",
       "color": "cream",
       "type": "men",
-      "all": "all"
+      "all": "all",
+      "category": "sale"
     },
     {
       "id": 19,
@@ -240,7 +259,8 @@ export const data = [
       "image": "vans-old-skool.jpg",
       "color": "Black/White",
       "type": "men",
-      "all": "all"
+      "all": "all",
+      "category": "sale"
     },
     {
       "id": 20,
@@ -251,7 +271,8 @@ export const data = [
       "image": "nike-air-jordan-11.jpg",
       "color": "Black",
       "type": "men",
-      "all": "all"
+      "all": "all",
+      "category": "sale"
     },
     
     {
@@ -263,7 +284,8 @@ export const data = [
       "image": "asics-gel-kayano-27.jpg",
       "color": "Blue/White",
       "type": "men",
-      "all": "all"
+      "all": "all",
+      "category": "sale"
     },
     
     

@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function About() {
   return (
-    <div className='px-7 pt-32'>
+    <div className='px-7 pt-16 md:pt-32'>
       <div>
         <h1 className='font-extrabold text-4xl md:text-7xl'>About Us</h1>
         <div className='flex flex-col md:w-[50%] text-sm md:text-md pt-10'>

@@ -6,7 +6,7 @@ import { data } from "./data"
 
 
 export default function Grid() {
-    const shoeData = data.filter(datum => datum.type == 'men').slice(5, 7);
+    const shoeData = data.filter(datum => datum.type == 'men').slice(8, 10);
 
     const gridLog = shoeData.map(men => (
         <section key={men.id} className='pt-6 pb-20'>
@@ -66,7 +66,7 @@ export default function Grid() {
 
     return (
         <section className=''>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 mx-5 bg-white rounded shadow-lg">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 mx-7 bg-white rounded shadow-lg gap-y-2 md:gap-y-0">
                 <div className="bg-cover bg-no-repeat h-screen min-w-full sm:min-w-[50%] flex items-center justify-center" style={{ backgroundImage: text1 ? "url('/New Balances.jpeg')" : text2 ? "url('/performance.jpg')" : text3 ? "url('/elegance.jpg')" : "url('/comfort.jpg')" }}>
                     <div className='gap-y-2'>
                         <ul className='text-white text-2xl'>
@@ -86,10 +86,10 @@ export default function Grid() {
                     </div>
                 </div>
                 <div className='flex justify-center items-center'>
-                    {text1 && <p className='flex justify-center items-center border border-white h-screen text-2xl'>Pulse, where style meets comfort</p>}
-                    {text2 && <p className='flex justify-center items-center border border-white h-screen text-2xl'>Discover your fairy tale fit at our shoe haven</p>}
-                    {text3 && <p className='flex justify-center items-center border border-white h-screen text-2xl'>Unleash Your Potential: Performance Shoes Built to Excel.</p>}
-                    {text4 && <p className='flex justify-center items-center border border-white h-screen text-2xl'>Adapt to Any Occasion: Versatile Shoes for Your Dynamic Lifestyle.</p>}
+                    {text1 && <p className='flex justify-center items-center border border-white h-screen text-2xl text-center'>Pulse, where style meets comfort</p>}
+                    {text2 && <p className='flex justify-center items-center border border-white h-screen text-2xl text-center'>Discover your fairy tale fit at our shoe haven</p>}
+                    {text3 && <p className='flex justify-center items-center border border-white h-screen text-2xl text-center'>Unleash Your Potential: Performance Shoes Built to Excel.</p>}
+                    {text4 && <p className='flex justify-center items-center border border-white h-screen text-2xl text-center'>Adapt to Any Occasion: Versatile Shoes for Your Dynamic Lifestyle.</p>}
                 </div>
                 <div>
                     <section className='flex flex-col justify-center items-center'>
@@ -97,7 +97,7 @@ export default function Grid() {
                         <h2 className='font-bold sm:text-3xl pt-4 text-xl'>Handpicked selection</h2>
                         <h2 className='font-bold text-xl sm:text-3xl'>of exclusive sneakers</h2>
 
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-2 mx-7 font-bold ">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-2 mx-7 font-bold">
                             {gridLog}
                         </div>
                         <button className='p-5 bg-black text-white mt-4'>SHOP EXCLUSIVE</button>
@@ -108,10 +108,10 @@ export default function Grid() {
                 <div className="bg-cover h-screen flex items-center justify-center bg-black text-opacity-100" style={{ backgroundImage: "url('/adidas.jpeg')" }}></div>
                 <div className="flex justify-center items-center flex-col">
                     <p className='flex justify-center items-center border border-white text-sm pt-10'>PERFECT FORM AND FUNCTION</p>
-                    <p className='flex justify-center items-center border border-white text-2xl font-extrabold pt-5'>Where Pulse Transcends into</p>
-                    <p className='flex justify-center items-center border border-white text-2xl font-extrabold'>Unforgettable Style Experiences</p>
-                    <p className='flex justify-center items-center border border-white text-sm pt-20 w-full sm:w-[50%]'>"Pulse" — it's more than a name; it's an experience, a journey into the artistry of footwear. Immerse yourself in our vast collection of shoes, meticulously curated to cater to every taste and occasion. Comfort is not just about fit — it's about feeling.</p>
-                    <p className='flex justify-center items-center border border-white text-sm pt-5 w-full sm:w-[50%]'>From the timeless allure of classic designs to the avant-garde innovation of cutting-edge styles, each pair of shoes tells a story of craftsmanship and elegance. Footwear is not just an accessory, but a reflection of your individuality.</p>
+                    <p className='flex justify-center items-center border border-white text-2xl font-extrabold pt-5 text-center'>Where Pulse Transcends into</p>
+                    <p className='flex justify-center items-center border border-white text-2xl font-extrabold text-center'>Unforgettable Style Experiences</p>
+                    <p className='flex justify-center items-center border border-white text-sm pt-20 w-full sm:w-[50%] text-center'>"Pulse" — it's more than a name; it's an experience, a journey into the artistry of footwear. Immerse yourself in our vast collection of shoes, meticulously curated to cater to every taste and occasion. Comfort is not just about fit — it's about feeling.</p>
+                    <p className='flex justify-center items-center border border-white text-sm pt-5 w-full sm:w-[50%] text-center'>From the timeless allure of classic designs to the avant-garde innovation of cutting-edge styles, each pair of shoes tells a story of craftsmanship and elegance. Footwear is not just an accessory, but a reflection of your individuality.</p>
                     <Link href="/about">
                         <button className='p-3 text-white bg-black text-sm mt-10 sm:mt-40 flex items-center justify-center'>LEARN MORE</button>
                     </Link>

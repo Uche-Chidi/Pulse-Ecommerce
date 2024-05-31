@@ -1,13 +1,14 @@
 import { Work_Sans } from "next/font/google";
 import "./globals.css";
-import Navbar from "./components/Navbar";
 import { Footer } from "./components/Footer";
+import Navbar from "./components/Hamburger";
+import ShopDropdown from "./dropdown/ShopDropdown";
 
 
 const work = Work_Sans({ subsets: ["latin"], weight: ['400'] });
 
 export const metadata = {
-  title: "Choice",
+  title: "Pulse",
   description: "E-commerce webapp (Capstone)",
 };
 

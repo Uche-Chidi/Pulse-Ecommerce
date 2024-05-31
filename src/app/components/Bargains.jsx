@@ -31,11 +31,11 @@ export const WomenShoeMain = () => {
   
     return (
       <section>
-        <div className="pt-20 md:pt-40">
+        <div className="pt-20 md:pt-40 px-7 text-center">
           <h3 className='flex justify-center items-center text-3xl md:text-5xl w-full'>Bargains</h3>
           <p className='flex justify-center items-center w-full p-4 md:p-10 text-sm'>LATEST TRENDS DESIGNED TO IGNITE YOUR PASSION FOR STYLE</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-x-1 mx-5 md:mx-7">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-x-1 mx-7 md:mx-7">
           {bargainsLog}
         </div>
       </section>
