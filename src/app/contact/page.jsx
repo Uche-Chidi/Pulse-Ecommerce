@@ -1,5 +1,5 @@
 import React from 'react'
-import Contact from './contact'
+import Contact from './Contact'
 import Contact1 from './Contact1'
 import Contact2 from './Contact2'
 
