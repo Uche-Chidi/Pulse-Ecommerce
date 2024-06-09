@@ -3,9 +3,6 @@ import Image from "next/image"
 import { data } from "../components/data"
 import Link from 'next/link';
 
-
-
-
 export const Sale = () => {
     const saleData = data.filter(datum => datum.category === 'sale').slice(0, 24);
   

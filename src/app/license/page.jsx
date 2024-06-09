@@ -2,7 +2,6 @@
 import Licenses from './License'
 import React, { useState, useEffect } from'react';
 import Loader from "../components/Loader";
-import ScrollToTop from '../components/SctollToTop';
 
 export default function page() {
     const [loading, setLoading] = useState(true);
@@ -21,7 +20,6 @@ export default function page() {
     }
   return (
     <div>
-        <ScrollToTop />
         <Licenses/>
     </div>
   )

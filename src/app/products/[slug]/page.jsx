@@ -6,8 +6,6 @@ import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 import Loader from "../../components/Loader";
 
-
-
 export default function ProductPage({ params }) {
   const product = data.find(p => p.name.split(' ').join('-') === params.slug);
 

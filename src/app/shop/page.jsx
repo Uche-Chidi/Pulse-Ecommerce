@@ -24,7 +24,6 @@ export default function page() {
   
     <div>
       <AllShoeMains />
-      {/* <Shop2 /> */}
     </div>
   )
 }

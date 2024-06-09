@@ -11,7 +11,7 @@ A modern, responsive eCommerce web application built using Next.js, Tailwind CSS
 - [Technologies Used](#technologies-used)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
+
 
 ## Demo
 
@@ -39,5 +39,63 @@ Make sure you have the following installed on your local development environment
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
+   git clone https://github.com/Uche-Chidi/Pulse-Ecommerce
+   cd Pulse-Ecommerce
+
+2. Install dependencies:
+    npm install
+
+3. Running the Development Server
+    npm run dev
+    Open your browser and navigate to http://localhost:3000 to see the application running.
+
+## Folder Structure
+.
+├── components          # Reusable React components
+├── pages               # Next.js pages
+│   ├── components      # Home page
+│   └── ...             # Other pages
+├── public              # Static assets
+├── styles              # Global and component-level styles
+├── utils               # Utility functions
+└── README.md           # This file
+
+## Technologies Used
+
+1. Next.js
+2. React
+3. Tailwind CSS
+4. React Hook Form
+5. React Query
+
+## Usage
+
+1. Product Management
+2. Browse Products: View the list of available products.
+3. Search Products: Search for products by name or category.
+4. View Product Details: Click on a product to see detailed information.
+6. Add to Cart: Add products to your shopping cart.
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and create a pull request with your changes.
+
+### Steps to Contribute
+
+1. Fork the repository.
+
+2. Create a new branch:
+    git checkout -b feature/your-feature-name
+
+3. Commit changes:
+    git commit -m 'Add commit message here'
+
+4. Push to branch:
+    git push origin feature/add-feature-name
+
+5. Open a pull request.
+
+
+
+
+
