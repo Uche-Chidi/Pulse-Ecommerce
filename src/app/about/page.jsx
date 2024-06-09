@@ -4,7 +4,6 @@ import About2 from './About2'
 import About3 from './About3'
 import React, { useState, useEffect } from 'react';
 import Loader from "../components/Loader";
-import ScrollToTop from '../components/SctollToTop';
 
 export default function page() {
   const [loading, setLoading] = useState(true);
@@ -23,7 +22,6 @@ export default function page() {
     }
   return (
     <div>
-      <ScrollToTop />
         <About />
         <About2 />
         <About3 />

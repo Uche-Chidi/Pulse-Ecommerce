@@ -22,6 +22,7 @@ const Navbar = () => {
     const [isNavOpen, setIsNavOpen] = useState(false);
     const [drop, setDrop] = useState(false);
     const [isOrderDropdownOpen, setIsOrderDropdownOpen] = useState(false);
+    const [searchQuery, setSearchQuery] = useState('');
 
     function showDropDown(){
         setDrop(!drop)
@@ -43,6 +44,16 @@ const Navbar = () => {
         setIsOrderDropdownOpen(false);
     }
 
+    const handleSearchChange = (e) => {
+        setSearchQuery(e.target.value);
+    };
+
+    const handleSearchSubmit = (e) => {
+        e.preventDefault();
+        // Handle search submission (e.g., redirect to search results page)
+        console.log("Search query submitted:", searchQuery);
+    };
+
     const val = 0;
 
     return (
@@ -54,6 +65,18 @@ const Navbar = () => {
                     <Link href='/'>Pulse</Link>
                 </h1>
             </div>
+            <div className='hidden sm:flex flex-1 justify-center'>
+                    <form onSubmit={handleSearchSubmit} className='flex'>
+                        <input 
+                            type='text' 
+                            value={searchQuery} 
+                            onChange={handleSearchChange} 
+                            placeholder='Search...'
+                            className='p-2 border border-gray-300 focus:outline-none focus:border-black rounded-full pr-10'
+                        />
+                        <button type='submit' className='py-2 bg-black text-white rounded-full ml-2 px-5'>Search</button>
+                    </form>
+                </div>
             <div className='flex items-center'>
                 <ul className='text-black hidden sm:flex flex-row gap-8 relative text-sm'>
                    

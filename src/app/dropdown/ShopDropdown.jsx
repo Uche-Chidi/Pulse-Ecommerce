@@ -5,15 +5,39 @@ import Link from 'next/link';
 
 export default function ShopDropdown() {
     const [isDropdownOpen, setIsDropdownOpen] = useState(true);
+    const [searchQuery, setSearchQuery] = useState('');
+
 
     const handleLinkClick = () => {
         setIsDropdownOpen(false);
+    };
+
+    const handleSearchChange = (e) => {
+        setSearchQuery(e.target.value);
+    };
+
+    const handleSearchSubmit = (e) => {
+        e.preventDefault();
+        // Handle search submission (e.g., redirect to search results page)
+        console.log("Search query submitted:", searchQuery);
     };
 
     return (
         isDropdownOpen && (
             <section className='absolute md:h-[50vh] h-[100vh] w-full overflow-auto mt-[8vh]'>
                 <div className='flex flex-col md:flex-row mt-0 px-7 justify-between bg-white text-black overflow-y-scroll'>
+                <div className='sm:flex flex-1 justify-center'>
+                    <form onSubmit={handleSearchSubmit} className='flex mt-10'>
+                        <input 
+                            type='text' 
+                            value={searchQuery} 
+                            onChange={handleSearchChange} 
+                            placeholder='Search...'
+                            className='p-2 border border-gray-300 focus:outline-none focus:border-black rounded-full pr-11'
+                        />
+                        <button type='submit' className='py-2 bg-black text-white rounded-full ml-2 px-5'>Search</button>
+                    </form>
+                </div>  
                     <div className='md:hidden py-10'>
                         <p className='text-sm font-extrabold text-gray-500'>MENU</p>
                         <Link href="/about" onClick={handleLinkClick}>
@@ -56,11 +80,11 @@ export default function ShopDropdown() {
                             <p>50</p>
                         </div>
                     </div>
-                    <Link href="../../components/NewArrivals.jsx" onClick={handleLinkClick}>
-                        <div className="hover:scale-95 duration-300 bg-cover md:h-[40vh] h-[30vh] md:w-[60vw] w-full backdrop-brightness-0 flex items-center justify-center my-5" style={{backgroundImage: "url('/dropdown.jpg')"}}>
+                    {/* <Link href="../../components/NewArrivals.jsx" onClick={handleLinkClick}> */}
+                        <div id="../../components/NewArrivals.jsx" onClick={handleLinkClick} className="hover:scale-95 duration-300 bg-cover md:h-[40vh] h-[30vh] md:w-[60vw] w-full backdrop-brightness-0 flex items-center justify-center my-5" style={{backgroundImage: "url('/dropdown.jpg')"}}>
                             <p className='flex items-center justify-center text-center text-white font-extrabold text-4xl'>New Arrivals</p>
                         </div>
-                    </Link>
+                    {/* </Link> */}
                 </div>
             </section>
         )
