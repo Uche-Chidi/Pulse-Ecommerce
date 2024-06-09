@@ -1,11 +1,10 @@
-import { Work_Sans } from "next/font/google";
+import { Archivo } from "next/font/google";
 import "./globals.css";
 import { Footer } from "./components/Footer";
 import Navbar from "./components/Hamburger";
-import ShopDropdown from "./dropdown/ShopDropdown";
 
 
-const work = Work_Sans({ subsets: ["latin"], weight: ['400'] });
+const work = Archivo({ subsets: ["latin"], weight: ['400'] });
 
 export const metadata = {
   title: "Pulse",

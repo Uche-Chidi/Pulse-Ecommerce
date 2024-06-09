@@ -1,8 +1,11 @@
-import React from 'react'
+"use client"
 import { data } from '../../components/data'
 import Image from 'next/image'
 import { MdArrowBack } from "react-icons/md";
 import Link from 'next/link';
+import React, { useState, useEffect } from 'react';
+import Loader from "../../components/Loader";
+
 
 
 export default function ProductPage({ params }) {
@@ -16,6 +19,21 @@ export default function ProductPage({ params }) {
     }
     return array;
 }
+
+    const [loading, setLoading] = useState(true);
+    
+        useEffect(() => {
+        // Simulate a network request or some async operation
+        const timer = setTimeout(() => {
+            setLoading(false);
+        }, 2000); // Adjust the duration as needed
+    
+        return () => clearTimeout(timer);
+        }, []);
+    
+        if (loading) {
+        return <Loader />;
+        }
 
     const recommendationData = shuffle(data.filter(datum => datum.all == 'all')).slice(0, 3);
 

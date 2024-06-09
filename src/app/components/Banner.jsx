@@ -27,17 +27,19 @@ export default function Banner() {
   
         <div className='flex flex-col md:flex-row pt-5 w-full h-full gap-5 px-7 md:px-7'>
           <div className='bg-black h-[50vh] md:h-[95vh] w-full md:w-[48vw] overflow-hidden'>
-            <Link href="">
+            <Link href="/male">
               <div className="bg-cover h-full w-full flex items-center justify-center hover:scale-105 transition-transform cursor-pointer duration-300" style={{backgroundImage: "url('/menshoes.jpg')"}}>
                 <h2 className='flex justify-center items-center text-white text-2xl md:text-4xl h-full w-full backdrop-brightness-50'>Men's Shoes</h2>
               </div>
             </Link>
           </div>
+          <Link href="/female">
           <div className='bg-black h-[50vh] md:h-[95vh] w-full md:w-[48vw] overflow-hidden'>
             <div className="bg-cover h-full w-full flex items-center justify-center hover:scale-105 transition-transform cursor-pointer duration-300" style={{backgroundImage: "url('/womenshoes.jpg')"}}>
               <h2 className='flex justify-center items-center text-white text-2xl md:text-4xl h-full w-full backdrop-brightness-50'>Women's Shoes</h2>
             </div>
           </div>
+          </Link>
         </div>
         
         <div className='pt-20 md:pt-40'>

@@ -27,7 +27,7 @@ export const Footer = () => {
       <div className='text-xs flex flex-col sm:flex-row justify-between pt-32'>
         <div className='flex flex-col sm:flex-row sm:gap-40'>
           <ul className='flex flex-col mb-5 sm:mb-0'>
-            <li className='pb-5'>
+            <li className='pb-5' onClick="">
               <Link href='/shop'>SHOP ALL</Link>
             </li>
             <li className='pb-5'>
@@ -38,11 +38,15 @@ export const Footer = () => {
             </li>
           </ul>
           <ul className='flex flex-col mb-5 sm:mb-0'>
-            <Link href="/dropdown">
+            <Link href="/terms">
               <li className='pb-5'>TERMS</li>
             </Link>
-            <li className='pb-5'>SHIPPING POLICY</li>
-            <li className='pb-5'>REFUND POLICY</li>
+            <Link href="/shipping">
+              <li className='pb-5'>SHIPPING POLICY</li>
+            </Link>
+            <Link href="/refund">
+              <li className='pb-5'>REFUND POLICY</li>
+            </Link>
           </ul>
           <ul className='flex flex-col mb-5 sm:mb-0'>
             <li className='pb-5'>
@@ -59,7 +63,9 @@ export const Footer = () => {
 
         <div className='pt-9 text-gray-400 sm:text-left text-right'>
           <ul className=''>
-            <li className='pb-5 flex sm:justify-start justify-end items-end'>LICENSES</li>
+            <Link href="/license">
+              <li className='pb-5 flex sm:justify-start justify-end items-end'>LICENSES</li>
+            </Link>
             <li className='pb-5'>
               <Link href=''>&copy; {new Date().getFullYear()} PULSE</Link>
             </li>

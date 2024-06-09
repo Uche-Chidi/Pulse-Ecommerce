@@ -55,7 +55,7 @@ export const data = [
       "description": "The Reebok Club C 85 is a timeless sneaker with a retro-inspired design. Featuring a soft leather upper and cushioned midsole, it's perfect for everyday wear or casual outings.",
       "image": "reebok-club-c-85.jpg",
       "color": "White/Green",
-      "type": "women",
+      "type": "men",
       "all": "all",
       "category": "exclusive"
     },
