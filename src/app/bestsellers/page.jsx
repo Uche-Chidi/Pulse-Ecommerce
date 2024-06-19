@@ -2,7 +2,6 @@
 import { Bestsellers } from './bestsellers1'
 import React, { useState, useEffect } from 'react';
 import Loader from "../components/Loader";
-import ScrollToTop from '../components/SctollToTop';
 
 export default function page() {
   const [loading, setLoading] = useState(true);
@@ -21,7 +20,7 @@ export default function page() {
     }
   return (
     <div>
-      <ScrollToTop />
+
         <Bestsellers />
     </div>
   )

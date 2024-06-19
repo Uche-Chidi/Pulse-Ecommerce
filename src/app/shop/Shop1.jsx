@@ -40,7 +40,9 @@ export const AllShoeMains = () => {
           <h3 className='text-3xl md:text-5xl w-full'>Shop All</h3>
           <div className='flex flex-col sm:flex-row gap-5 text-sm pt-10 pb-10'>
             <p>ALL PRODUCTS</p>
-            <p>ALPHABETICALLY, A-Z</p>
+            <Link href="/a-z">
+              <p>ALPHABETICALLY, A-Z</p>
+            </Link>
             <p>ALPHABETICALLY, Z-A</p>
           </div>
         </div>

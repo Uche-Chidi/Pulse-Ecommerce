@@ -4,7 +4,7 @@ export default function Shipping() {
   return (
     <section className='pt-[8vh] px-7'>
         <div className='grid grid-cols-1 md:grid-cols-2'>
-            <div className='w-full md:w-[90%] gap-20'>
+            <div className='w-full md:w-[90%] gap-20 h-full overflow-auto'>
                 <div>
                     <h3 className='font-extrabold text-3xl md:text-6xl pt-10 md:pt-20'>Shipping Policy</h3>
                     <p className='text-sm font-light py-5'>Below you'll find our shipping policy, designed to ensure a smooth and convenient shopping experience.</p>
