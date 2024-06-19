@@ -1,6 +1,6 @@
 "use client"
 // import React from 'react'
-import Terms from './terms'
+import Terms from './Terms';
 import React, { useState, useEffect } from 'react';
 import Loader from "../components/Loader";
 
