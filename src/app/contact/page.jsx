@@ -1,9 +1,10 @@
 "use client"
-import Contact from '../components/Contact'
-import Contact1 from '../components/Contact1'
-import Contact2 from '../components/Contact2'
+
 import React, { useState, useEffect } from 'react';
 import Loader from "../components/Loader";
+import Contact from '../components/Contact';
+import Contact1 from '../components/Contact1';
+import Contact2 from '../components/Contact2';
 
 export default function page() {
   const [loading, setLoading] = useState(true);
@@ -22,9 +23,9 @@ export default function page() {
     }
   return (
     <div>
-        <Contact />
+        <Contact/>
         <Contact1 />
-        <Contact2 />
+        <Contact2/>
     </div>
   )
 }
