@@ -6,7 +6,7 @@ import Contact from '../components/Contact';
 import Contact1 from '../components/Contact1';
 import Contact2 from '../components/Contact2';
 
-export default function page() {
+export default function ContactPage() {
   const [loading, setLoading] = useState(true);
   
     useEffect(() => {
