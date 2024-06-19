@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { data } from "./data";
 import React, { useState, useEffect } from 'react';
-import Loader from "../components/Loader";
+import Loader from "./Loader";
 
 export default function Grid() {
     const [loading, setLoading] = useState(true);

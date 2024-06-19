@@ -1,8 +1,7 @@
 "use client"
-import Contact from './Contact'
-import Contact1 from './Contact1'
-"use client"
-import Contact2 from './Contact2'
+import Contact from '../components/Contact'
+import Contact1 from '../components/Contact1'
+import Contact2 from '../components/Contact2'
 import React, { useState, useEffect } from 'react';
 import Loader from "../components/Loader";
 
