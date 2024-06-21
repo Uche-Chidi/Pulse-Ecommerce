@@ -24,7 +24,7 @@ export default function Licenses() {
                     <p className='text-sm font-light py-5'>Choice is using one main font, called Archivo. It can be downloaded at Google Fonts. It is free for personal and commercial use.</p>
                 </div>
             </div>
-            <div className='h-[100vh] md:w-[100%] md:h-[100vh]  right-0 top-[8vh] md:top-0 md:right-7'>
+            <div className='h-[100vh] md:w-[100%] md:h-[100vh]  right-0 top-[8vh] md:top-0 md:right-7 sticky'>
                 <img src="/licenses.jpg" alt="Terms Image" className='w-full h-full object-cover' />
             </div>
         </div>

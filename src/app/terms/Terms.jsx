@@ -38,7 +38,7 @@ export default function Terms() {
                     <p className='text-sm font-light py-5'>If you have any questions or concerns about these terms of service, please contact us at hello@pulse.com.</p>
                 </div>
             </div>
-            <div className='h-[100vh] md:w-[100%] md:h-[100vh]  right-0 top-[8vh] md:top-0 md:right-7'>
+            <div className='h-[100vh] md:w-[100%] md:h-[100vh]  right-0 top-[8vh] md:top-0 md:right-7 sticky'>
                 <img src="/terms.jpg" alt="Terms Image" className='w-full h-full object-cover' />
             </div>
         </div>

@@ -1,8 +1,6 @@
 "use client"
 import React, { useState } from 'react';
 import Link from 'next/link';
-
-
 import Search from '../components/Search';
 
 export default function ShopDropdown() {

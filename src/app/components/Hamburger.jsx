@@ -63,7 +63,7 @@ const Navbar = () => {
                 <div className='hidden md:block'>
                     <Search searchQuery={searchQuery} handleSearchChange={handleSearchChange} handleSearchSubmit={handleSearchSubmit} />
                 </div>
-                <div className='flex items-center'>
+                <div className='flex items-center text-sm'>
                     <ul className='text-black hidden sm:flex flex-row gap-8 relative text-sm'>
                         <li onClick={toggleDrop} className='cursor-pointer'>
                             SHOP

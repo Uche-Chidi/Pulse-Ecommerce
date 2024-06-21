@@ -7,7 +7,9 @@ export const Footer = () => {
     <footer className='bg-black w-full min-h-[40vh] text-white px-7'>
       <div className='flex flex-col sm:flex-row justify-between pt-7'>
         <div>
-          <h2 className='text-white text-xl'>Pulse</h2>
+          <Link href="/">
+            <h2 className='text-white text-xl'>Pulse</h2>
+          </Link>
         </div>
         <div className='border-b pb-3 border-gray-400 w-full sm:w-auto mt-4 sm:mt-0'>
           <input

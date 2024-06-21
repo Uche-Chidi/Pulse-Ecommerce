@@ -81,7 +81,7 @@ export default function ProductPage({ params }) {
             <div className="font-semibold text-center">
                 <h3 className="flex items-center justify-center">{all.name}</h3>
                 <p className="flex items-center justify-center font-bold">
-                    <span>&#8358;</span><span>{all.price}</span>
+                    &#8358;{all.price.toLocaleString()}
                 </p>
             </div>
         </section>
