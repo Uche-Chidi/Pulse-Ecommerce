@@ -3,9 +3,6 @@ import Image from "next/image"
 import { data } from "../components/data"
 import Link from 'next/link';
 
-
-
-
 export const Exclusive = () => {
     const exclusiveData = data.filter(datum => datum.category === 'exclusive').slice(0, 24);
   
@@ -27,7 +24,7 @@ export const Exclusive = () => {
         <div className="font-semibold text-center">
           <h3 className="text-lg md:text-xl">{exclusive.name}</h3>
           <p className="text-md md:text-lg">
-            <span>&#8358;</span><span>{exclusive.price}</span>
+            <span>&#8358;</span><span>{exclusive.price.toLocaleString()}</span>
           </p>
         </div>
       </section>

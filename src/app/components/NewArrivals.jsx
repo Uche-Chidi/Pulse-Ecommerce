@@ -23,7 +23,7 @@ export const ShoeMain = () => {
         <div className="font-semibold text-center">
           <h3 className="text-lg md:text-xl">{men.name}</h3>
           <p className="text-md md:text-lg">
-            <span>&#8358;</span><span>{men.price}</span>
+            <span>&#8358;</span><span>{men.price.toLocaleString()}</span>
           </p>
         </div>
       </section>
