@@ -5,7 +5,7 @@ import { WomenMain } from './Female'
 import React, { useState, useEffect } from'react';
 import Loader from "../components/Loader";
 
-export default function page() {
+export default function Page() {
   const [loading, setLoading] = useState(true);
   
     useEffect(() => {
