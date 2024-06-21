@@ -2,7 +2,7 @@ import { AllShoeMains } from "./Shop1";
 import Shop2 from "./Shop2";
 
 
-export default function layout({ children }) {
+export default function Layout({ children }) {
   return (
     <div>
         {children}
