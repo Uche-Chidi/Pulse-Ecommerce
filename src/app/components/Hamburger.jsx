@@ -80,8 +80,8 @@ const Navbar = () => {
                         <span className='font-semibold ml-2 text-black'>({val})</span>
                     </div>
                     <div className='ml-4 relative md:hidden'>
-                        <div className='text-2xl cursor-pointer text-black' onClick={toggleNav}>
-                            {isNavOpen ? <IoMdClose /> : <RxHamburgerMenu />}
+                        <div className='text-2xl cursor-pointer text-black' onClick={toggleDrop}>
+                            {drop ? <IoMdClose /> : <RxHamburgerMenu />}
                             
                         </div>
                         {isNavOpen && (
@@ -105,6 +105,11 @@ const Navbar = () => {
                     <ShopDropdown />
                 </div>
             )}
+            {/* {isNavOpen && (
+                <div ref={dropdownRef}>
+                    <ShopDropdown />
+                </div>
+            )} */}
             {isCartOpen && (
                 <div ref={cartRef}>
                     <Cart />

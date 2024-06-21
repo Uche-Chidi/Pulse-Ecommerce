@@ -16,9 +16,9 @@ export default function ShopDropdown() {
 
     return (
         isDropdownOpen && (
-            <section className='absolute md:h-[50vh] h-[100vh] w-full overflow-auto mt-[8vh]'>
+            <section className='md:h-[50vh] h-[100dvh] w-full overflow-auto'>
                 <div className='flex flex-col md:flex-row mt-0 px-7 justify-between bg-white text-black overflow-y-scroll'>
-                    <div className='sm:flex flex-1 justify-center md:hidden'>
+                    <div className='sm:flex flex-1 justify-center md:hidden pt-20'>
                         <Search onSearchItemClick={handleSearchItemClick} />
                     </div>
                     <div className='block md:hidden py-10'>
@@ -63,8 +63,10 @@ export default function ShopDropdown() {
                             <p className='text-sm font-extrabold '>50</p>
                         </div>
                     </div>
-                    <div id="../../components/NewArrivals.jsx" onClick={handleLinkClick} className="hover:scale-95 duration-300 bg-cover md:h-[40vh] h-[30vh] md:w-[60vw] w-full backdrop-brightness-0 flex items-center justify-center my-5" style={{ backgroundImage: "url('/dropdown.jpg')" }}>
-                        <p className='flex items-center justify-center text-center text-white font-extrabold text-4xl'>New Arrivals</p>
+                    <div className='hidden md:block'>
+                        <div id="../../components/NewArrivals.jsx" onClick={handleLinkClick} className=" hover:scale-95 duration-300 bg-cover md:h-[40vh] md:w-[60vw] w-full backdrop-brightness-0 flex items-center justify-center my-5" style={{ backgroundImage: "url('/dropdown.jpg')" }}>
+                            <p className='flex items-center justify-center text-center text-white font-extrabold text-4xl'>New Arrivals</p>
+                        </div>
                     </div>
                 </div>
             </section>

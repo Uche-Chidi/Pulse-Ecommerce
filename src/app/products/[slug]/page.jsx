@@ -99,7 +99,7 @@ export default function ProductPage({ params }) {
                         <button>SHOP ALL</button>
                     </Link>
                     <h1 className='text-3xl md:text-4xl font-extrabold'>{product.name}</h1>
-                    <p className='font-bold pt-3'><span>&#8358;</span>{product.price}</p>
+                    <p className='font-bold pt-3'><span>&#8358;</span>{product.price.toLocaleString()}</p>
                     <p className='w-full md:w-[75%] lg:w-[50%] pt-5 md:pt-20'>{product.description}</p>
                     <div className='flex flex-col justify-between'>
                         <div className='flex flex-wrap w-full md:w-[50%] justify-between mt-10 md:mt-20 gap-3'>

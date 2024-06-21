@@ -28,7 +28,7 @@ export const AllShoeMains = () => {
         <div className="font-semibold text-center">
           <h3 className="text-lg md:text-xl">{all.name}</h3>
           <p className="text-md md:text-lg">
-            <span>&#8358;</span><span>{all.price}</span>
+            <span>&#8358;</span><span>{all.price.toLocaleString()}</span>
           </p>
         </div>
       </section>
@@ -41,7 +41,7 @@ export const AllShoeMains = () => {
           <div className='flex flex-col sm:flex-row gap-5 text-sm pt-10 pb-10'>
             <p>ALL PRODUCTS</p>
             <Link href="/a-z">
-              <p>ALPHABETICALLY, A-Z</p>
+              <p className='cursor-pointer'>ALPHABETICALLY, A-Z</p>
             </Link>
             <p>ALPHABETICALLY, Z-A</p>
           </div>

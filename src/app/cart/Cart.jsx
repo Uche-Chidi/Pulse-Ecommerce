@@ -6,12 +6,20 @@ import Image from 'next/image';
 import { RiDeleteBin2Fill } from 'react-icons/ri';
 
 export default function Cart() {
-    const { cartItems } = useContext(SideBarContext);
+    const { val, setVal, cartItems, setCartItems } = useContext(SideBarContext);
     const [isCartOpen, setIsCartOpen] = useState(true);
 
     const handleClick = () => {
         setIsCartOpen(false);
     };
+
+    const deleteCartItems = (id) =>{
+        const newCartItems = [...cartItems];
+        const deleteItem = newCartItems.splice(id, 1)[0]
+        setCartItems(newCartItems)
+
+        setVal(prev => prev - deleteItem.value)
+    }
 
     const totalAmount = cartItems.reduce((acc, item) => acc + (item.amount * item.value), 0);
 
@@ -20,22 +28,22 @@ export default function Cart() {
             {isCartOpen && (
                 <>
                     <div className="fixed inset-0 bg-black bg-opacity-50 z-40"></div>
-                    <section className='fixed top-0 right-0 w-[33%] h-[100vh] bg-white shadow-lg flex flex-col overflow-hidden z-50'>
-                        <div className='p-7 flex-1 flex flex-col'>
-                            <div className='flex justify-between items-center mb-5 mt-0'>
-                                <h2 className='text-xl font-bold text-black'>Cart</h2>
-                                <button onClick={handleClick} className='text-xl'>
+                    <section className='fixed top-0 right-0 w-full md:w-[33%] h-[100vh] bg-white shadow-lg flex flex-col z-50'>
+                        <div className='p-5 md:p-7 flex-1 flex flex-col'>
+                            <div className='flex justify-between items-center mb-5'>
+                                <h2 className='text-xl md:text-3xl font-bold text-black'>Cart</h2>
+                                <button onClick={handleClick} className='text-xl md:text-3xl'>
                                     <IoMdClose />
                                 </button>
                             </div>
                             {cartItems.length === 0 ? (
                                 <div className='flex-1 flex items-center justify-center'>
-                                    <p className='text-xl '>Your cart is empty</p>
+                                    <p className='text-xl'>Your cart is empty</p>
                                 </div>
                             ) : (
-                                <div className='overflow-y-auto flex-1 mb-5'>
+                                <div className='overflow-auto mb-5 h-[550px] md:h-[500px]'>
                                     {cartItems.map((item, id) => (
-                                        <div key={item.id} className='mb-5 grid grid-cols-3 gap-x-10 items-center'>
+                                        <div key={item.id} className='mb-5 grid grid-cols-3 gap-x-2 sm:gap-x-10 items-center'>
                                             <div className='bg-[#D9D9D9]'>
                                                 <Image src={`/shoes/${item.image}`} alt={item.image} width={150} height={150} />
                                             </div>
@@ -46,7 +54,7 @@ export default function Cart() {
                                                     <p>&#8358;{item.amount.toLocaleString()}</p>
                                                 </div>
                                             </div>
-                                            <div className='flex justify-end items-start'>
+                                            <div className='flex justify-end items-start' onClick={() => deleteCartItems(id)}> 
                                                 <RiDeleteBin2Fill className='cursor-pointer text-xl' />
                                             </div>
                                         </div>
@@ -54,7 +62,7 @@ export default function Cart() {
                                 </div>
                             )}
                         </div>
-                        <div className='p-7 bg-white border-t border-gray-200'>
+                        <div className='p-5 md:p-7 bg-white border-t border-gray-200 justify-end items-end'>
                             <div className='flex justify-between mb-3'>
                                 <p className='text-xl'>TOTAL</p>
                                 <p className='text-xl'>
