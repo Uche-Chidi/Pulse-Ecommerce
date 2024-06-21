@@ -39,11 +39,15 @@ export const AllShoeMains = () => {
         <div className="pt-20 md:pt-40 md:mx-7 mx-7">
           <h3 className='text-3xl md:text-5xl w-full'>Shop All</h3>
           <div className='flex flex-col sm:flex-row gap-5 text-sm pt-10 pb-10'>
-            <p>ALL PRODUCTS</p>
-            <Link href="/a-z">
-              <p className='cursor-pointer'>ALPHABETICALLY, A-Z</p>
+            <Link href="/shop">
+              <p>ALL PRODUCTS</p>
             </Link>
-            <p>ALPHABETICALLY, Z-A</p>
+            <Link href="/a-z">
+              <p>ALPHABETICALLY, A-Z</p>
+            </Link>
+            <Link href="/z-a">
+              <p>ALPHABETICALLY, Z-A</p>
+            </Link>
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-x-1 md:mx-7 mx-7">

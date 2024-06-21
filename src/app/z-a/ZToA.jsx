@@ -3,12 +3,12 @@ import Image from "next/image";
 import { data } from "../components/data";
 import Link from 'next/link';
 
-export default function AToZ() {
-    const aToZData = data.filter(datum => datum.all === 'all').slice(0, 24);
+export default function ZToA() {
+    const zToAData = data.filter(datum => datum.all === 'all').slice(0, 24);
 
-    const alphabetical = aToZData.sort((a, b) => a.name.localeCompare(b.name));
+    const alphabetical = zToAData.sort((a, b) => b.name.localeCompare(a.name));
 
-    const aToZLog = alphabetical.map(item => (
+    const zToALog = alphabetical.map(item => (
         <section key={item.id} className=''>
             <div className="bg-[#D9D9D9] overflow-hidden">
                 <Link href={`/products/${item.name.split(" ").join("-")}`}>
@@ -49,7 +49,7 @@ export default function AToZ() {
                 </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-x-1 md:pb-5 md:mx-7 mx-7">
-                {aToZLog}
+                {zToALog}
             </div>
         </section>
     );
