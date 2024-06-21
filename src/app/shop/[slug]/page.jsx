@@ -4,7 +4,7 @@ import { AllShoeMain } from '../Shop3'
 import React, { useState, useEffect } from 'react';
 import Loader from "../../components/Loader";
 
-export default function page({params}) {
+export default function Page({params}) {
   const [loading, setLoading] = useState(true);
   
     useEffect(() => {
