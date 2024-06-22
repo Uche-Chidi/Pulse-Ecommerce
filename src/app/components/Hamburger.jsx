@@ -9,6 +9,7 @@ import { SideBarContext } from '../providers';
 import Search from './search';
 import Cart from '../cart/Cart';
 import { useOutsideClick } from '../outsideClick/OutsideClick';
+import { motion } from 'framer-motion';
 
 const links = [
     { name: 'SHOP', href: '#' },

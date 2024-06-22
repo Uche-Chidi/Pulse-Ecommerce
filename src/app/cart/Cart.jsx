@@ -4,6 +4,7 @@ import { IoMdClose } from "react-icons/io";
 import { SideBarContext } from '../providers';
 import Image from 'next/image';
 import { RiDeleteBin2Fill } from 'react-icons/ri';
+import { AnimatePresence, motion } from 'framer-motion';
 
 export default function Cart() {
     const { val, setVal, cartItems, setCartItems } = useContext(SideBarContext);
@@ -11,6 +12,12 @@ export default function Cart() {
 
     const handleClick = () => {
         setIsCartOpen(false);
+    };
+
+    const sidebarVariants = {
+        hidden: { opacity: 0, y: -20 },
+        visible: { opacity: 1, y: 0, transition: { duration: 1.0 } },
+        exit: { opacity: 0, y: -20, transition: { duration: 1.0 } }
     };
 
     const deleteCartItems = (id) =>{
@@ -23,11 +30,22 @@ export default function Cart() {
 
     const totalAmount = cartItems.reduce((acc, item) => acc + (item.amount * item.value), 0);
 
+    
+
     return (
+        <AnimatePresence>
+
         <>
             {isCartOpen && (
                 <>
-                    <div className="fixed inset-0 bg-black bg-opacity-50 z-40"></div>
+                    <motion.div 
+                    className="fixed inset-0 bg-black bg-opacity-50 z-40"
+                    initial="hidden"
+                    animate="visible"
+                    exit="exit"
+                    variants={sidebarVariants}
+                    >
+
                     <section className='fixed top-0 right-0 w-full md:w-[33%] h-[100vh] bg-white shadow-lg flex flex-col z-50'>
                         <div className='p-5 md:p-7 flex-1 flex flex-col'>
                             <div className='flex justify-between items-center mb-5'>
@@ -74,8 +92,10 @@ export default function Cart() {
                             </button>
                         </div>
                     </section>
+                    </motion.div>
                 </>
             )}
         </>
+        </AnimatePresence>
     );
 }
