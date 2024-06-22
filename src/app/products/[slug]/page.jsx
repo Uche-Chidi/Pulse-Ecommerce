@@ -93,11 +93,13 @@ export default function ProductPage({ params }) {
                 <div className='w-full md:w-1/2 bg-[#D9D9D9]'>
                     <Image src={`/shoes/${product.image}`} alt={product.name} width={1420} height={900} className="w-full h-auto" />
                 </div>
-                <div className='w-full md:w-1/2'>
+                <div className='w-full md:w-1/2 '>
+                    <div>
                     <Link href="/shop" className='flex gap-2 mb-5 md:mb-20'>
                         <MdArrowBack />
-                        <button>SHOP ALL</button>
+                        <button className='bg-black text-white p-2'>SHOP ALL</button>
                     </Link>
+                    </div>
                     <h1 className='text-3xl md:text-4xl font-extrabold'>{product.name}</h1>
                     <p className='font-bold pt-3'><span>&#8358;</span>{product.price.toLocaleString()}</p>
                     <p className='w-full md:w-[75%] lg:w-[50%] pt-5 md:pt-20'>{product.description}</p>
@@ -122,7 +124,7 @@ export default function ProductPage({ params }) {
                             />
                             <button 
                                 onClick={addValToCart} 
-                                className='bg-black text-white md:w-full w-[75%] py-4 md:py-2 md:mt-0 rounded-md'
+                                className='bg-black text-white md:w-full w-[75%] py-4 md:py-2 md:mt-0 rounded-md hover:bg-gray-300 hover:text-black'
                             >
                                 ADD TO BAG
                             </button>

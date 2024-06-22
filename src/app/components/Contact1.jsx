@@ -10,7 +10,7 @@ export default function Contact1() {
               <input type="text" placeholder='FULL NAME' className='border-b-2 pb-2 pt-5 bg-[whitesmoke] pl-2'/>
               <input type="email" placeholder='EMAIL' className='border-b-2 pb-2 pt-5 bg-[whitesmoke] pl-2'/>
               <input type="text" placeholder='MESSAGE' className='border-b-2 pb-2 pt-5 bg-[whitesmoke] pl-2'/>
-              <button className='text-white bg-black w-full py-5 my-10'>SEND A MESSAGE</button>
+              <button className='text-white bg-black w-full py-5 my-10 hover:bg-gray-300 hover:text-black'>SEND A MESSAGE</button>
             </div>
           </div>
           <div className='bg-[whitesmoke]'>

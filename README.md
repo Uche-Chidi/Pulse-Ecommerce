@@ -67,6 +67,7 @@ Make sure you have the following installed on your local development environment
 3. Tailwind CSS
 4. React Hook Form
 5. React Query
+6. Framer motion
 
 ## Usage
 

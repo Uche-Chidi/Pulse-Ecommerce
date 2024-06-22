@@ -87,7 +87,7 @@ export default function Cart() {
                                     &#8358;{totalAmount.toLocaleString()}
                                 </p>
                             </div>
-                            <button className='bg-black text-white p-3 w-full hover:bg-gray-100 hover:text-black'>
+                            <button className='bg-black text-white p-3 w-full hover:bg-gray-300 hover:text-black'>
                                 CHECKOUT
                             </button>
                         </div>
