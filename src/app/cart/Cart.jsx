@@ -17,7 +17,7 @@ export default function Cart() {
     const sidebarVariants = {
         hidden: { opacity: 0, y: -20 },
         visible: { opacity: 1, y: 0, transition: { duration: 1.0 } },
-        exit: { opacity: 0, y: -20, transition: { duration: 1.0 } }
+        exit: { opacity: 0, y: -20, transition: { duration: 1.0, ease: "easeInOut"} }
     };
 
     const deleteCartItems = (id) =>{

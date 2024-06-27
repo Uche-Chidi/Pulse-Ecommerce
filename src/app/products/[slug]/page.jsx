@@ -6,14 +6,13 @@ import Link from 'next/link';
 import React, { useState, useEffect, useContext } from 'react';
 import Loader from "../../components/Loader";
 import { SideBarContext } from '@/app/providers';
+import Swal from 'sweetalert2';
 
 export default function ProductPage({ params }) {
     const { val, setVal, inputVal, setInputVal, cartItems, setCartItems} = useContext(SideBarContext);
     
     const product = data.find(p => p.name.split(' ').join('-') === params.slug);
-    const [itemName, setItemName] = useState(product ? product.name : "")
-
-    
+    const [itemName, setItemName] = useState(product ? product.name : "");
 
     const [loading, setLoading] = useState(true);
 
@@ -27,26 +26,32 @@ export default function ProductPage({ params }) {
 
     const changeValType = (e) => {
         setInputVal(Number(e.target.value));
-
     };
 
     const addValToCart = () => {
         setVal(prev => prev + inputVal);
         
-        let newCartItems
-        const itemIndex = cartItems.findIndex(item => item.title === itemName)
+        let newCartItems;
+        const itemIndex = cartItems.findIndex(item => item.title === itemName);
         if (itemIndex !== -1) {
             newCartItems = cartItems.map((item, index) =>
-            index === itemIndex ? {
-                ...item, 
-                value:item.value + inputVal,
-            } : item
-            )
-        }else {
-            newCartItems = [...cartItems, {id:product.id,title:product.name,image:product.image,value:inputVal,amount:product.price}]
-            
+                index === itemIndex ? {
+                    ...item, 
+                    value: item.value + inputVal,
+                } : item
+            );
+        } else {
+            newCartItems = [...cartItems, { id: product.id, title: product.name, image: product.image, value: inputVal, amount: product.price }];
         }
         setCartItems(newCartItems);
+
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Item added to cart',
+            showConfirmButton: false,
+            timer: 1500
+        });
     };
 
     const shuffle = (array) => {
@@ -123,7 +128,7 @@ export default function ProductPage({ params }) {
                                 onChange={changeValType}
                             />
                             <button 
-                                onClick={addValToCart} 
+                                onClick={addValToCart}
                                 className='bg-black text-white md:w-full w-[75%] py-4 md:py-2 md:mt-0 rounded-md hover:bg-gray-300 hover:text-black'
                             >
                                 ADD TO BAG
