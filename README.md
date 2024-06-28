@@ -15,7 +15,7 @@ A modern, responsive eCommerce web application built using Next.js, Tailwind CSS
 
 ## Demo
 
-Check out the live demo of the application: [Live Demo]() (replace with your demo link)
+Check out the live demo of the application: [https://pulse-ecommerce-g.vercel.app/]
 
 ## Features
 
